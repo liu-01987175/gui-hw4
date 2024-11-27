@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label, input, button {
+  font-size: 1rem;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: #091d33;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0672e6;
+}
+
+/* Table container with scrollbar */
+.table-container {
+  margin-top: 20px;
+  max-height: 400px; /* Maximum height for the table */
+  overflow: auto;   /* Enables scrolling when table exceeds max-height */
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+tr th {
+  position: sticky;
+  top: 0; /* Keep the top row sticky */
+  z-index: 1; /* Lower priority compared to first column */
+  background-color: #f9f9f9; /* Match the column color */
+}
+
+th:first-child {
+  position: sticky;
+  left: 0; /* Keep the first column sticky */
+  z-index: 2; /* Make sure it stays above other cells */
+  background-color: #f9f9f9; /* Match the header row color */
+}
+
+/* Form input elements */
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="number"]:focus {
+  border-color: #a1c4fd;
+}
+
+#tabs {
+  margin-top: 20px;
+}
+
+#tabList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tabList li {
+  display: inline;
+  margin-right: 10px;
+  font-weight: bold;
+}

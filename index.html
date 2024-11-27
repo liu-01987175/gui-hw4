@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Multiplication Table</h1>
+        <form id="rangeForm">
+            <label for="startRow">Start Row:</label>
+            <input type="number" id="startRow" name="startRow" min="-50" max="50" required>
+            <div id="startRowSlider"></div>
+
+            <label for="endRow">End Row:</label>
+            <input type="number" id="endRow" name="endRow" min="-50" max="50" required>
+            <div id="endRowSlider"></div>
+
+            <label for="startCol">Start Column:</label>
+            <input type="number" id="startCol" name="startCol" min="-50" max="50" required>
+            <div id="startColSlider"></div>
+
+            <label for="endCol">End Column:</label>
+            <input type="number" id="endCol" name="endCol" min="-50" max="50" required>
+            <div id="endColSlider"></div>
+
+            <button type="submit">Generate Table</button>
+        </form>
+
+        <div id="tabs">
+            <!--Fix later-->
+            <ul id="tabList">
+                <li><a href="#tab-1">Enter Parameters</a></li>
+            </ul>
+            <div id="tab-1"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
